@@ -1,0 +1,102 @@
+h1{
+    text-transform: uppercase;
+}
+.Parent_packeges {
+    display: flex;
+    background: rgb(211, 208, 208);
+    margin: 20px 210px;
+    width: 78vw;
+border-radius: 20px;
+}
+.Parent_packeges img {
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.Parent_packeges .middle{
+    width: 60%;
+    padding:20px 30px;
+    
+}
+.Parent_packeges .middle  h2 {
+    font-size: 1.7em;
+    text-transform: uppercase;
+    margin-bottom: 10px ;
+}
+.Parent_packeges .middle p{
+    padding: 2px 10px;
+    line-height: 42px;
+    margin: 10px 0px;
+}
+.Parent_packeges .middle .days{
+    background: white;
+    display: block;
+    min-width: 150px;
+    max-width: 250px;
+
+    border-radius: 20px;
+    padding: 2px 10px;
+    text-align: center;
+}
+.Parent_packeges .middle .days span{
+    position: relative;
+    top: -5px;
+}
+.Parent_packeges .middle .days span img{
+    position: relative;
+top: 8px;
+}
+.Parent_packeges .middle .days #clork::after{
+    margin: 0px 2px;
+    content: '';
+    border-right: 1px solid black;
+}
+
+.last_packege_block{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 50px 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+    width: 40%;
+    font-size: 21px;
+ color: white;
+    background-color: rgb(94, 135, 162);
+}
+.last_packege_block div {
+    margin: 10px 0px;
+}
+.last_packege_block div span{
+    margin: 0px 10px;
+}
+
+
+@media screen and (max-width:545px) {
+    .Parent_packeges {
+        display: flex;
+        flex-direction: column;
+        background: rgb(211, 208, 208);
+        margin: 20px 20px;
+        width: 90vw;
+        justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    }
+    .Parent_packeges .last_packege_block,.middle,#package_img  {
+        width: 100%;
+    }
+    .Parent_packeges img {
+border-top-left-radius: 20px;
+border-top-right-radius:20px ;
+    }
+    .Parent_packeges .middle {
+        width: 100%;
+    }
+    .last_packege_block {
+        border-radius: 0px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+}
